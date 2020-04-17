@@ -1,8 +1,21 @@
 import React from "react";
+import "./About.css"
 
-function About(props){
+function About(props) {
     console.log(props);
-    return <span>About this page</span>
+    return (
+        <div className="about_container">
+
+            <span>
+                시원이가 
+            </span>
+            <span>
+                보고싶다 ㅠ
+            </span>
+        </div>
+
+    );
+
 }
 
 export default About;
