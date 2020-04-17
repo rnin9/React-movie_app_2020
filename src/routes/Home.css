@@ -33,7 +33,7 @@ body,
     justify-content: space-between; /*쭉붙이기*/
     flex-wrap: wrap;       /*  한개씩 */
     padding:50px;
-    width:63%;
+    width:80%;
     align-items: flex-start;
     padding-top: 70px;
     }

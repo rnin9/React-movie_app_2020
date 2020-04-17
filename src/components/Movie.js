@@ -6,8 +6,8 @@ import "./Movie.css";
 //state 필요없으면 걍 function으로 만들기.
 
 function Movie({ year, title, summary, poster, genres }) {
-    return (
-        <Link to={{
+    return ( 
+    <Link to={{
             pathname:'/movie-detail',
             state:{
                 year,
@@ -18,7 +18,8 @@ function Movie({ year, title, summary, poster, genres }) {
             }
         }}>
             <div className="movie">
-                <img src={poster} alt={title} />
+        
+               <img src={poster} alt={title} />
                 <div className="movie__data">
                     <h3 className="movie__title">{title}</h3>
                     <h5 className="movie__year">{year}</h5>
@@ -28,7 +29,8 @@ function Movie({ year, title, summary, poster, genres }) {
                     <p className="movie__summary">{summary.slice(0, 180)}...</p>
                 </div>
 
-            </div>
+                </div>
+            
         </Link>
     );
 }
